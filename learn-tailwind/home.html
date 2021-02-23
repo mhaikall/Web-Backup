@@ -1,0 +1,1794 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="QKQvkqXZElHQcKua9hrilTsbS7l2csqy1HjiONSZ">
+    <title>Parsinta
+    </title>
+    <link rel="prefetch" href="/series?curated">
+    <link rel="prefetch" href="/skills/laravel">
+    <link rel="prefetch" href="/skills/reactjs">
+    <link rel="prefetch" href="/skills/vue">
+    <link rel="prefetch" href="/skills/tailwind-css">
+    <link rel="stylesheet" href="tailwind.css" type="text/css" media="all" />
+    <meta name="title" content="Parsinta">
+    <meta name="description" content="Dorong keterampilan pengembangan web Anda ke tingkat berikutnya, melalui seri-seri yang ada disini seperti Laravel, Vue, PHP, HTML, CSS, CSS preprocessor, dan banyak lagi.">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://parsinta.com">
+    <meta property="og:title" content="Parsinta">
+    <meta property="og:description" content="Dorong keterampilan pengembangan web Anda ke tingkat berikutnya, melalui seri-seri yang ada disini seperti Laravel, Vue, PHP, HTML, CSS, CSS preprocessor, dan banyak lagi.">
+    <meta property="og:image" content="https://parsinta.com/images/og-image.jpg">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://parsinta.com">
+    <meta property="twitter:title" content="Parsinta">
+    <meta property="twitter:description" content="Dorong keterampilan pengembangan web Anda ke tingkat berikutnya, melalui seri-seri yang ada disini seperti Laravel, Vue, PHP, HTML, CSS, CSS preprocessor, dan banyak lagi.">
+    <meta property="twitter:image" content="https://parsinta.com/images/og-image.jpg">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png?v=vMgGe8RqKr">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png?v=vMgGe8RqKr">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png?v=vMgGe8RqKr">
+    <link rel="manifest" href="/favicons/site.webmanifest?v=vMgGe8RqKr">
+    <link rel="mask-icon" href="/favicons/safari-pinned-tab.svg?v=vMgGe8RqKr" color="#0d6efd">
+    <link rel="shortcut icon" href="/favicons/favicon.ico?v=vMgGe8RqKr">
+    <meta name="apple-mobile-web-app-title" content="Parsinta">
+    <meta name="application-name" content="Parsinta">
+    <meta name="msapplication-TileColor" content="#0d6efd">
+    <meta name="theme-color" content="#24292e">
+<!--    <style>.pace{
+      -webkit-pointer-events:none;
+      pointer-events:none;
+      -webkit-user-select:none;
+      -moz-user-select:none;
+      -ms-user-select:none;
+      user-select:none}
+      .pace-inactive{
+        display:none}
+      .pace .pace-progress{
+        background:#0d6efd;
+        position:fixed;
+        z-index:2000;
+        top:0;
+        right:100%;
+        width:100%;
+        height:3px}
+      :root{
+        -moz-tab-size:4;
+        -o-tab-size:4;
+        tab-size:4}
+      html{
+        line-height:1.15;
+        -webkit-text-size-adjust:100%}
+      body{
+        margin:0;
+        font-family:system-ui,-apple-system,Segoe\ UI,Roboto,Helvetica,Arial,sans-serif,Apple\ Color\ Emoji,Segoe\ UI\ Emoji}
+      sup{
+        font-size:75%;
+        line-height:0;
+        position:relative;
+        vertical-align:baseline}
+      sup{
+        top:-.5em}
+      button,input{
+        font-family:inherit;
+        font-size:100%;
+        line-height:1.15;
+        margin:0}
+      button{
+        text-transform:none}
+      [type="button"],button{
+        -webkit-appearance:button}
+      ::-moz-focus-inner{
+        border-style:none;
+        padding:0}
+      :-moz-focusring{
+        outline:1px dotted ButtonText}
+      :-moz-ui-invalid{
+        box-shadow:none}
+      ::-webkit-inner-spin-button,::-webkit-outer-spin-button{
+        height:auto}
+      ::-webkit-search-decoration{
+        -webkit-appearance:none}
+      ::-webkit-file-upload-button{
+        -webkit-appearance:button;
+        font:inherit}
+      h1,h2,h3,h4,p{
+        margin:0}
+      button{
+        background-color:transparent;
+        background-image:none}
+      button:focus{
+        outline:1px dotted;
+        outline:5px auto -webkit-focus-ring-color}
+      ul{
+        margin:0;
+        padding:0}
+      ul{
+        list-style:none}
+      html{
+        font-family:Open\ Sans,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe\ UI,Roboto,Helvetica\ Neue,Arial,Noto\ Sans,sans-serif,Apple\ Color\ Emoji,Segoe\ UI\ Emoji,Segoe\ UI\ Symbol,Noto\ Color\ Emoji;
+        line-height:1.5}
+      body{
+        font-family:inherit;
+        line-height:inherit}
+      *,:after,:before{
+        box-sizing:border-box;
+        border:0 solid #e1e4e8}
+      img{
+        border-style:solid}
+      input::-moz-placeholder{
+        color:#959da5}
+      input:-ms-input-placeholder{
+        color:#959da5}
+      input::placeholder{
+        color:#959da5}
+      button{
+        cursor:pointer}
+      h1,h2,h3,h4{
+        font-size:inherit;
+        font-weight:inherit}
+      a{
+        color:inherit;
+        text-decoration:inherit}
+      button,input{
+        padding:0;
+        line-height:inherit;
+        color:inherit}
+      img,svg{
+        display:block;
+        vertical-align:middle}
+      img{
+        max-width:100%;
+        height:auto}
+      [type="text"]{
+        -webkit-appearance:none;
+        -moz-appearance:none;
+        appearance:none;
+        background-color:#fff;
+        border-color:#6a737d;
+        border-width:1px;
+        border-radius:0;
+        padding:.5rem .75rem;
+        font-size:1rem;
+        line-height:1.5rem}
+      [type="text"]:focus{
+        outline:2px solid transparent;
+        outline-offset:2px;
+        --tw-ring-inset:var(--tw-empty);
+        --tw-ring-offset-width:0;
+        --tw-ring-offset-color:#fff;
+        --tw-ring-color:#2563eb;
+        --tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+        --tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+        box-shadow:var(--tw-ring-offset-shadow) , var(--tw-ring-shadow) , var(--tw-shadow,0 0 transparent);
+        border-color:#2563eb}
+      input::-moz-placeholder{
+        color:#6a737d;
+        opacity:1}
+      input:-ms-input-placeholder{
+        color:#6a737d;
+        opacity:1}
+      input::placeholder{
+        color:#6a737d;
+        opacity:1}
+      ::-webkit-datetime-edit-fields-wrapper{
+        padding:0}
+      ::-webkit-date-and-time-value{
+        min-height:1.5em}
+      .container{
+        width:100%;
+        margin-right:auto;
+        margin-left:auto;
+        padding-right:1rem;
+        padding-left:1rem}
+      @media (min-width:640px){
+        .container{
+          max-width:640px}
+      }
+      @media (min-width:768px){
+        .container{
+          max-width:768px}
+      }
+      @media (min-width:1024px){
+        .container{
+          max-width:1024px}
+      }
+      @media (min-width:1280px){
+        .container{
+          max-width:1280px}
+      }
+      @media (min-width:1536px){
+        .container{
+          max-width:1536px}
+      }
+      .space-x-4>:not([hidden])~:not([hidden]){
+        --tw-space-x-reverse:0!important;
+        margin-right:calc(1rem*var(--tw-space-x-reverse))!important;
+        margin-left:calc(1rem*(1 - var(--tw-space-x-reverse)))!important}
+      .divide-y>:not([hidden])~:not([hidden]){
+        --tw-divide-y-reverse:0!important;
+        border-top-width:calc(1px*(1 - var(--tw-divide-y-reverse)))!important;
+        border-bottom-width:calc(1px*var(--tw-divide-y-reverse))!important}
+      .divide-gray-200>:not([hidden])~:not([hidden]){
+        --tw-divide-opacity:1!important;
+        border-color:rgba(225,228,232,var(--tw-divide-opacity))!important}
+      .appearance-none{
+        -webkit-appearance:none!important;
+        -moz-appearance:none!important;
+        appearance:none!important}
+      .bg-clip-text{
+        -webkit-background-clip:text!important;
+        background-clip:text!important}
+      .bg-white{
+        --tw-bg-opacity:1!important}
+      .bg-white{
+        background-color:rgba(255,255,255,var(--tw-bg-opacity))!important}
+      .bg-gray-50{
+        background-color:rgba(250,251,252,var(--tw-bg-opacity))!important}
+      .bg-gray-50,.bg-gray-100{
+        --tw-bg-opacity:1!important}
+      .bg-gray-100{
+        background-color:rgba(246,248,250,var(--tw-bg-opacity))!important}
+      .bg-gray-200{
+        background-color:rgba(225,228,232,var(--tw-bg-opacity))!important}
+      .bg-gray-200{
+        --tw-bg-opacity:1!important}
+      .bg-blue-100{
+        background-color:rgba(219,234,254,var(--tw-bg-opacity))!important}
+      .bg-blue-100,.bg-blue-500{
+        --tw-bg-opacity:1!important}
+      .bg-blue-500{
+        background-color:rgba(59,130,246,var(--tw-bg-opacity))!important}
+      .bg-primary-500{
+        --tw-bg-opacity:1!important;
+        background-color:rgba(13,110,253,var(--tw-bg-opacity))!important}
+      .hover\:bg-gray-100:hover{
+        --tw-bg-opacity:1!important;
+        background-color:rgba(246,248,250,var(--tw-bg-opacity))!important}
+      .hover\:bg-primary-600:hover{
+        --tw-bg-opacity:1!important;
+        background-color:rgba(10,88,202,var(--tw-bg-opacity))!important}
+      .focus\:bg-primary-700:focus{
+        --tw-bg-opacity:1!important;
+        background-color:rgba(8,66,152,var(--tw-bg-opacity))!important}
+      .bg-gradient-to-br{
+        background-image:linear-gradient(to bottom right,var(--tw-gradient-stops))!important}
+      .bg-gradient-to-b{
+        background-image:linear-gradient(180deg,var(--tw-gradient-stops))!important}
+      .from-gray-100{
+        --tw-gradient-from:#f6f8fa!important;
+        --tw-gradient-stops:var(--tw-gradient-from) , var(--tw-gradient-to,rgba(246,248,250,0))!important}
+      .from-yellow-400{
+        --tw-gradient-from:#fbbf24!important;
+        --tw-gradient-stops:var(--tw-gradient-from) , var(--tw-gradient-to,rgba(251,191,36,0))!important}
+      .from-blue-100{
+        --tw-gradient-from:#dbeafe!important;
+        --tw-gradient-stops:var(--tw-gradient-from) , var(--tw-gradient-to,rgba(219,234,254,0))!important}
+      .from-pink-400{
+        --tw-gradient-from:#f472b6!important;
+        --tw-gradient-stops:var(--tw-gradient-from) , var(--tw-gradient-to,rgba(244,114,182,0))!important}
+      .from-primary-500{
+        --tw-gradient-from:#0d6efd!important;
+        --tw-gradient-stops:var(--tw-gradient-from) , var(--tw-gradient-to,rgba(13,110,253,0))!important}
+      .to-gray-100{
+        --tw-gradient-to:#f6f8fa!important}
+      .to-blue-100{
+        --tw-gradient-to:#dbeafe!important}
+      .to-teal-500{
+        --tw-gradient-to:#14b8a6!important}
+      .to-cyan-500{
+        --tw-gradient-to:#06b6d4!important}
+      .to-orange-500{
+        --tw-gradient-to:#f97316!important}
+      .to-rose-500{
+        --tw-gradient-to:#f43f5e!important}
+      .border-transparent{
+        border-color:transparent!important}
+      .border-gray-200{
+        --tw-border-opacity:1!important}
+      .border-gray-200{
+        border-color:rgba(225,228,232,var(--tw-border-opacity))!important}
+      .border-gray-300{
+        --tw-border-opacity:1!important;
+        border-color:rgba(209,213,218,var(--tw-border-opacity))!important}
+      .border-primary-500{
+        --tw-border-opacity:1!important;
+        border-color:rgba(13,110,253,var(--tw-border-opacity))!important}
+      .focus\:border-transparent:focus{
+        border-color:transparent!important}
+      .focus\:border-primary-500:focus{
+        --tw-border-opacity:1!important;
+        border-color:rgba(13,110,253,var(--tw-border-opacity))!important}
+      .rounded{
+        border-radius:.25rem!important}
+      .rounded-lg{
+        border-radius:.5rem!important}
+      .rounded-xl{
+        border-radius:.75rem!important}
+      .rounded-2xl{
+        border-radius:1rem!important}
+      .rounded-3xl{
+        border-radius:1.5rem!important}
+      .rounded-full{
+        border-radius:9999px!important}
+      .border{
+        border-width:1px!important}
+      .border-t{
+        border-top-width:1px!important}
+      .border-b{
+        border-bottom-width:1px!important}
+      .block{
+        display:block!important}
+      .inline-block{
+        display:inline-block!important}
+      .inline{
+        display:inline!important}
+      .flex{
+        display:flex!important}
+      .inline-flex{
+        display:inline-flex!important}
+      .grid{
+        display:grid!important}
+      .hidden{
+        display:none!important}
+      .flex-col{
+        flex-direction:column!important}
+      .flex-wrap{
+        flex-wrap:wrap!important}
+      .items-start{
+        align-items:flex-start!important}
+      .items-center{
+        align-items:center!important}
+      .items-stretch{
+        align-items:stretch!important}
+      .justify-center{
+        justify-content:center!important}
+      .justify-between{
+        justify-content:space-between!important}
+      .flex-auto{
+        flex:1 1 auto!important}
+      .flex-none{
+        flex:none!important}
+      .flex-shrink-0{
+        flex-shrink:0!important}
+      .font-normal{
+        font-weight:400!important}
+      .font-medium{
+        font-weight:500!important}
+      .font-semibold{
+        font-weight:600!important}
+      .font-bold{
+        font-weight:700!important}
+      .font-extrabold{
+        font-weight:800!important}
+      .h-1{
+        height:.25rem!important}
+      .h-4{
+        height:1rem!important}
+      .h-5{
+        height:1.25rem!important}
+      .h-6{
+        height:1.5rem!important}
+      .h-8{
+        height:2rem!important}
+      .h-10{
+        height:2.5rem!important}
+      .h-11{
+        height:2.75rem!important}
+      .h-12{
+        height:3rem!important}
+      .h-16{
+        height:4rem!important}
+      .h-24{
+        height:6rem!important}
+      .h-px{
+        height:1px!important}
+      .h-full{
+        height:100%!important}
+      .text-xs{
+        font-size:.75rem!important;
+        line-height:1rem!important}
+      .text-sm{
+        font-size:.875rem!important;
+        line-height:1.25rem!important}
+      .text-lg{
+        font-size:1.125rem!important}
+      .text-lg,.text-xl{
+        line-height:1.75rem!important}
+      .text-xl{
+        font-size:1.25rem!important}
+      .text-2xl{
+        font-size:1.5rem!important;
+        line-height:2rem!important}
+      .text-3xl{
+        font-size:1.875rem!important;
+        line-height:2.25rem!important}
+      .text-xxs{
+        font-size:.6rem!important}
+      .leading-7{
+        line-height:1.75rem!important}
+      .leading-relaxed{
+        line-height:1.625!important}
+      .my-4{
+        margin-top:1rem!important;
+        margin-bottom:1rem!important}
+      .my-8{
+        margin-top:2rem!important;
+        margin-bottom:2rem!important}
+      .my-10{
+        margin-top:2.5rem!important;
+        margin-bottom:2.5rem!important}
+      .mx-auto{
+        margin-left:auto!important;
+        margin-right:auto!important}
+      .mr-0{
+        margin-right:0!important}
+      .mr-1{
+        margin-right:.25rem!important}
+      .mt-2{
+        margin-top:.5rem!important}
+      .mr-2{
+        margin-right:.5rem!important}
+      .mb-2{
+        margin-bottom:.5rem!important}
+      .ml-2{
+        margin-left:.5rem!important}
+      .mr-3{
+        margin-right:.75rem!important}
+      .mb-3{
+        margin-bottom:.75rem!important}
+      .mt-4{
+        margin-top:1rem!important}
+      .mr-4{
+        margin-right:1rem!important}
+      .mb-4{
+        margin-bottom:1rem!important}
+      .mt-5{
+        margin-top:1.25rem!important}
+      .mb-5{
+        margin-bottom:1.25rem!important}
+      .mb-6{
+        margin-bottom:1.5rem!important}
+      .mb-8{
+        margin-bottom:2rem!important}
+      .mt-10{
+        margin-top:2.5rem!important}
+      .mb-10{
+        margin-bottom:2.5rem!important}
+      .-mt-2{
+        margin-top:-.5rem!important}
+      .max-w-3xl{
+        max-width:48rem!important}
+      .object-cover{
+        -o-object-fit:cover!important;
+        object-fit:cover!important}
+      .object-center{
+        -o-object-position:center!important;
+        object-position:center!important}
+      .focus\:outline-none:focus{
+        outline:2px solid transparent!important;
+        outline-offset:2px!important}
+      .overflow-hidden{
+        overflow:hidden!important}
+      .p-1{
+        padding:.25rem!important}
+      .p-4{
+        padding:1rem!important}
+      .p-5{
+        padding:1.25rem!important}
+      .p-6{
+        padding:1.5rem!important}
+      .px-0{
+        padding-left:0!important;
+        padding-right:0!important}
+      .py-1{
+        padding-top:.25rem!important;
+        padding-bottom:.25rem!important}
+      .py-2{
+        padding-top:.5rem!important;
+        padding-bottom:.5rem!important}
+      .px-2{
+        padding-left:.5rem!important;
+        padding-right:.5rem!important}
+      .px-3{
+        padding-left:.75rem!important;
+        padding-right:.75rem!important}
+      .py-4{
+        padding-top:1rem!important;
+        padding-bottom:1rem!important}
+      .px-4{
+        padding-left:1rem!important;
+        padding-right:1rem!important}
+      .px-5{
+        padding-left:1.25rem!important;
+        padding-right:1.25rem!important}
+      .py-6{
+        padding-top:1.5rem!important;
+        padding-bottom:1.5rem!important}
+      .px-6{
+        padding-left:1.5rem!important;
+        padding-right:1.5rem!important}
+      .py-10{
+        padding-top:2.5rem!important;
+        padding-bottom:2.5rem!important}
+      .pb-6{
+        padding-bottom:1.5rem!important}
+      .absolute{
+        position:absolute!important}
+      .relative{
+        position:relative!important}
+      .top-0{
+        top:0!important}
+      *{
+        --tw-shadow:0 0 transparent}
+      .shadow-sm{
+        --tw-shadow:0 1px 2px 0 rgba(0,0,0,.05)!important}
+      .shadow,.shadow-sm{
+        box-shadow:var(--tw-ring-offset-shadow,0 0 transparent) , var(--tw-ring-shadow,0 0 transparent) , var(--tw-shadow)!important}
+      .shadow{
+        --tw-shadow:0 1px 3px 0 rgba(0,0,0,.1) , 0 1px 2px 0 rgba(0,0,0,.06)!important}
+      .shadow-xl{
+        --tw-shadow:0 20px 25px -5px rgba(0,0,0,.1) , 0 10px 10px -5px rgba(0,0,0,.04)!important}
+      .shadow-xl{
+        box-shadow:var(--tw-ring-offset-shadow,0 0 transparent) , var(--tw-ring-shadow,0 0 transparent) , var(--tw-shadow)!important}
+      .shadow-offset-blue{
+        --tw-shadow:#fff 0 -.166667em 0 0 inset , #bae6fd 0 -.333333em 0 0 inset!important}
+      .shadow-offset-blue{
+        box-shadow:var(--tw-ring-offset-shadow,0 0 transparent) , var(--tw-ring-shadow,0 0 transparent) , var(--tw-shadow)!important}
+      *{
+        --tw-ring-inset:var(--tw-empty);
+        --tw-ring-offset-width:0;
+        --tw-ring-offset-color:#fff;
+        --tw-ring-color:rgba(59,130,246,.5);
+        --tw-ring-offset-shadow:0 0 transparent;
+        --tw-ring-shadow:0 0 transparent}
+      .focus\:ring:focus{
+        --tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color)!important;
+        --tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color)!important;
+        box-shadow:var(--tw-ring-offset-shadow) , var(--tw-ring-shadow) , var(--tw-shadow,0 0 transparent)!important}
+      .focus\:ring-transparent:focus{
+        --tw-ring-color:transparent!important}
+      .focus\:ring-gray-200:focus{
+        --tw-ring-opacity:1!important;
+        --tw-ring-color:rgba(225,228,232,var(--tw-ring-opacity))!important}
+      .focus\:ring-primary-100:focus{
+        --tw-ring-opacity:1!important;
+        --tw-ring-color:rgba(207,226,255,var(--tw-ring-opacity))!important}
+      .focus\:ring-primary-200:focus{
+        --tw-ring-opacity:1!important;
+        --tw-ring-color:rgba(158,197,254,var(--tw-ring-opacity))!important}
+      .fill-current{
+        fill:currentColor!important}
+      .text-center{
+        text-align:center!important}
+      .text-transparent{
+        color:transparent!important}
+      .text-black{
+        color:rgba(0,0,0,var(--tw-text-opacity))!important}
+      .text-black,.text-white{
+        --tw-text-opacity:1!important}
+      .text-white{
+        color:rgba(255,255,255,var(--tw-text-opacity))!important}
+      .text-gray-200{
+        --tw-text-opacity:1!important;
+        color:rgba(225,228,232,var(--tw-text-opacity))!important}
+      .text-gray-300{
+        --tw-text-opacity:1!important;
+        color:rgba(209,213,218,var(--tw-text-opacity))!important}
+      .text-gray-500{
+        --tw-text-opacity:1!important;
+        color:rgba(106,115,125,var(--tw-text-opacity))!important}
+      .text-gray-600{
+        --tw-text-opacity:1!important;
+        color:rgba(88,96,105,var(--tw-text-opacity))!important}
+      .text-gray-700{
+        --tw-text-opacity:1!important;
+        color:rgba(68,77,86,var(--tw-text-opacity))!important}
+      .text-gray-800{
+        --tw-text-opacity:1!important;
+        color:rgba(47,54,61,var(--tw-text-opacity))!important}
+      .text-gray-900{
+        --tw-text-opacity:1!important;
+        color:rgba(36,41,46,var(--tw-text-opacity))!important}
+      .text-gray-1000{
+        color:rgba(27,31,35,var(--tw-text-opacity))!important}
+      .text-gray-1000,.text-red-50{
+        --tw-text-opacity:1!important}
+      .text-red-50{
+        color:rgba(254,242,242,var(--tw-text-opacity))!important}
+      .text-red-500{
+        --tw-text-opacity:1!important;
+        color:rgba(239,68,68,var(--tw-text-opacity))!important}
+      .text-indigo-50{
+        --tw-text-opacity:1!important;
+        color:rgba(238,242,255,var(--tw-text-opacity))!important}
+      .text-indigo-400{
+        --tw-text-opacity:1!important;
+        color:rgba(129,140,248,var(--tw-text-opacity))!important}
+      .text-light-blue-50{
+        --tw-text-opacity:1!important;
+        color:rgba(240,249,255,var(--tw-text-opacity))!important}
+      .text-light-blue-400{
+        --tw-text-opacity:1!important;
+        color:rgba(56,189,248,var(--tw-text-opacity))!important}
+      .text-lime-500{
+        --tw-text-opacity:1!important;
+        color:rgba(132,204,22,var(--tw-text-opacity))!important}
+      .text-primary-500{
+        --tw-text-opacity:1!important;
+        color:rgba(13,110,253,var(--tw-text-opacity))!important}
+      .text-primary-600{
+        --tw-text-opacity:1!important;
+        color:rgba(10,88,202,var(--tw-text-opacity))!important}
+      .text-facebook{
+        --tw-text-opacity:1!important;
+        color:rgba(59,89,152,var(--tw-text-opacity))!important}
+      .hover\:text-gray-900:hover{
+        --tw-text-opacity:1!important;
+        color:rgba(36,41,46,var(--tw-text-opacity))!important}
+      .hover\:text-primary-500:hover{
+        --tw-text-opacity:1!important;
+        color:rgba(13,110,253,var(--tw-text-opacity))!important}
+      .focus\:text-gray-900:focus{
+        --tw-text-opacity:1!important;
+        color:rgba(36,41,46,var(--tw-text-opacity))!important}
+      .truncate{
+        overflow:hidden!important;
+        white-space:nowrap!important}
+      .truncate{
+        text-overflow:ellipsis!important}
+      .uppercase{
+        text-transform:uppercase!important}
+      .capitalize{
+        text-transform:capitalize!important}
+      .antialiased{
+        -webkit-font-smoothing:antialiased!important;
+        -moz-osx-font-smoothing:grayscale!important}
+      .tracking-tight{
+        letter-spacing:-.025em!important}
+      .tracking-wide{
+        letter-spacing:.025em!important}
+      .w-4{
+        width:1rem!important}
+      .w-5{
+        width:1.25rem!important}
+      .w-6{
+        width:1.5rem!important}
+      .w-8{
+        width:2rem!important}
+      .w-10{
+        width:2.5rem!important}
+      .w-11{
+        width:2.75rem!important}
+      .w-12{
+        width:3rem!important}
+      .w-16{
+        width:4rem!important}
+      .w-24{
+        width:6rem!important}
+      .w-32{
+        width:8rem!important}
+      .w-56{
+        width:14rem!important}
+      .w-full{
+        width:100%!important}
+      .z-10{
+        z-index:10!important}
+      .z-20{
+        z-index:20!important}
+      .z-40{
+        z-index:40!important}
+      .gap-4{
+        gap:1rem!important}
+      .gap-6{
+        gap:1.5rem!important}
+      .grid-cols-2{
+        grid-template-columns:repeat(2,minmax(0,1fr))!important}
+      .transform{
+        --tw-translate-x:0!important;
+        --tw-translate-y:0!important;
+        --tw-rotate:0!important;
+        --tw-skew-x:0!important;
+        --tw-skew-y:0!important;
+        --tw-scale-x:1!important;
+        --tw-scale-y:1!important;
+        transform:translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))!important}
+      .rotate-0{
+        --tw-rotate:0deg!important}
+      .rotate-2{
+        --tw-rotate:2deg!important}
+      .-rotate-2{
+        --tw-rotate:-2deg!important}
+      .transition{
+        transition-property:background-color , border-color , color , fill , stroke , opacity , box-shadow , transform!important;
+        transition-timing-function:cubic-bezier(.4,0,.2,1)!important;
+        transition-duration:.15s!important}
+      .transition-colors{
+        transition-property:background-color , border-color , color , fill , stroke!important;
+        transition-timing-function:cubic-bezier(.4,0,.2,1)!important;
+        transition-duration:.15s!important}
+      .duration-200{
+        transition-duration:.2s!important}
+      .duration-300{
+        transition-duration:.3s!important}
+      @-webkit-keyframes spin{
+        to{
+          transform:rotate(1turn)}
+      }
+      @keyframes spin{
+        to{
+          transform:rotate(1turn)}
+      }
+      @-webkit-keyframes ping{
+        75%,to{
+          transform:scale(2);
+          opacity:0}
+      }
+      @keyframes ping{
+        75%,to{
+          transform:scale(2);
+          opacity:0}
+      }
+      @-webkit-keyframes pulse{
+        50%{
+          opacity:.5}
+      }
+      @keyframes pulse{
+        50%{
+          opacity:.5}
+      }
+      @-webkit-keyframes bounce{
+        0%,to{
+          transform:translateY(-25%);
+          -webkit-animation-timing-function:cubic-bezier(.8,0,1,1);
+          animation-timing-function:cubic-bezier(.8,0,1,1)}
+        50%{
+          transform:none;
+          -webkit-animation-timing-function:cubic-bezier(0,0,.2,1);
+          animation-timing-function:cubic-bezier(0,0,.2,1)}
+      }
+      @keyframes bounce{
+        0%,to{
+          transform:translateY(-25%);
+          -webkit-animation-timing-function:cubic-bezier(.8,0,1,1);
+          animation-timing-function:cubic-bezier(.8,0,1,1)}
+        50%{
+          transform:none;
+          -webkit-animation-timing-function:cubic-bezier(0,0,.2,1);
+          animation-timing-function:cubic-bezier(0,0,.2,1)}
+      }
+      @-webkit-keyframes dropdownTransition{
+        0%{
+          opacity:0;
+          transform:scale(.98) translateY(-.6em)}
+        to{
+          opacity:1;
+          transform:scale(1) translateY(0)}
+      }
+      @keyframes dropdownTransition{
+        0%{
+          opacity:0;
+          transform:scale(.98) translateY(-.6em)}
+        to{
+          opacity:1;
+          transform:scale(1) translateY(0)}
+      }
+      .BrainhubCarousel__dots .BrainhubCarousel__dot{
+        display:none;
+        margin-top:.75rem}
+      @media (min-width:768px){
+        .BrainhubCarousel__dots .BrainhubCarousel__dot{
+          display:none}
+      }
+      .BrainhubCarousel__dots .BrainhubCarousel__dot:before{
+        --tw-bg-opacity:1!important;
+        background-color:rgba(88,96,105,var(--tw-bg-opacity))!important;
+        height:.5rem!important;
+        width:.5rem!important}
+      @media (min-width:640px){
+        .BrainhubCarousel__dots .BrainhubCarousel__dot:before{
+          --tw-bg-opacity:1!important;
+          background-color:rgba(88,96,105,var(--tw-bg-opacity))!important;
+          height:.75rem!important;
+          width:.75rem!important}
+      }
+      .BrainhubCarousel__dots .BrainhubCarousel__dot--selected:before{
+        --tw-bg-opacity:1!important;
+        background-color:rgba(10,88,202,var(--tw-bg-opacity))!important}
+      .comments p:not(:last-child){
+        margin-bottom:1rem}
+      @media (min-width:640px){
+        .sm\:font-bold{
+          font-weight:700!important}
+        .sm\:text-xl{
+          font-size:1.25rem!important;
+          line-height:1.75rem!important}
+        .sm\:text-2xl{
+          font-size:1.5rem!important;
+          line-height:2rem!important}
+        .sm\:text-3xl{
+          font-size:1.875rem!important;
+          line-height:2.25rem!important}
+        .sm\:leading-10{
+          line-height:2.5rem!important}
+        .sm\:grid-cols-2{
+          grid-template-columns:repeat(2,minmax(0,1fr))!important}
+        .sm\:grid-cols-3{
+          grid-template-columns:repeat(3,minmax(0,1fr))!important}
+      }
+      @media (min-width:768px){
+        .md\:text-lg{
+          font-size:1.125rem!important}
+        .md\:text-lg{
+          line-height:1.75rem!important}
+        .md\:text-3xl{
+          font-size:1.875rem!important;
+          line-height:2.25rem!important}
+        .md\:mb-5{
+          margin-bottom:1.25rem!important}
+        .md\:mb-6{
+          margin-bottom:1.5rem!important}
+        .md\:px-2{
+          padding-left:.5rem!important;
+          padding-right:.5rem!important}
+        .md\:w-32{
+          width:8rem!important}
+        .md\:grid-cols-4{
+          grid-template-columns:repeat(4,minmax(0,1fr))!important}
+      }
+      @media (min-width:1024px){
+        .lg\:bg-white{
+          --tw-bg-opacity:1!important;
+          background-color:rgba(255,255,255,var(--tw-bg-opacity))!important}
+        .lg\:bg-gradient-to-tr{
+          background-image:linear-gradient(to top right,var(--tw-gradient-stops))!important}
+        .lg\:rounded-none{
+          border-radius:0!important}
+        .lg\:rounded-lg{
+          border-radius:.5rem!important}
+        .lg\:rounded-2xl{
+          border-radius:1rem!important}
+        .lg\:block{
+          display:block!important}
+        .lg\:inline-block{
+          display:inline-block!important}
+        .lg\:hidden{
+          display:none!important}
+        .lg\:flex-row{
+          flex-direction:row!important}
+        .lg\:font-normal{
+          font-weight:400!important}
+        .lg\:font-bold{
+          font-weight:700!important}
+        .lg\:h-495p{
+          height:495px!important}
+        .lg\:h-480p{
+          height:480px!important}
+        .lg\:text-xs{
+          font-size:.75rem!important;
+          line-height:1rem!important}
+        .lg\:text-base{
+          font-size:1rem!important;
+          line-height:1.5rem!important}
+        .lg\:text-lg{
+          font-size:1.125rem!important}
+        .lg\:text-lg,.lg\:text-xl{
+          line-height:1.75rem!important}
+        .lg\:text-xl{
+          font-size:1.25rem!important}
+        .lg\:text-3xl{
+          font-size:1.875rem!important;
+          line-height:2.25rem!important}
+        .lg\:text-5xl{
+          font-size:3rem!important;
+          line-height:1!important}
+        .lg\:leading-8{
+          line-height:2rem!important}
+        .lg\:my-10{
+          margin-top:2.5rem!important;
+          margin-bottom:2.5rem!important}
+        .lg\:my-16{
+          margin-top:4rem!important;
+          margin-bottom:4rem!important}
+        .lg\:mb-0{
+          margin-bottom:0!important}
+        .lg\:mt-2{
+          margin-top:.5rem!important}
+        .lg\:mr-2{
+          margin-right:.5rem!important}
+        .lg\:mb-2{
+          margin-bottom:.5rem!important}
+        .lg\:mr-4{
+          margin-right:1rem!important}
+        .lg\:mb-4{
+          margin-bottom:1rem!important}
+        .lg\:mt-5{
+          margin-top:1.25rem!important}
+        .lg\:mb-5{
+          margin-bottom:1.25rem!important}
+        .lg\:mb-6{
+          margin-bottom:1.5rem!important}
+        .lg\:mt-16{
+          margin-top:4rem!important}
+        .lg\:-mr-6{
+          margin-right:-1.5rem!important}
+        .lg\:min-h-screen{
+          min-height:100vh!important}
+        .lg\:p-2{
+          padding:.5rem!important}
+        .lg\:p-10{
+          padding:2.5rem!important}
+        .lg\:py-2{
+          padding-top:.5rem!important;
+          padding-bottom:.5rem!important}
+        .lg\:px-3{
+          padding-left:.75rem!important;
+          padding-right:.75rem!important}
+        .lg\:py-5{
+          padding-top:1.25rem!important;
+          padding-bottom:1.25rem!important}
+        .lg\:px-5{
+          padding-left:1.25rem!important;
+          padding-right:1.25rem!important}
+        .lg\:py-10{
+          padding-top:2.5rem!important;
+          padding-bottom:2.5rem!important}
+        .lg\:py-12{
+          padding-top:3rem!important;
+          padding-bottom:3rem!important}
+        .lg\:py-24{
+          padding-top:6rem!important;
+          padding-bottom:6rem!important}
+        .lg\:py-32{
+          padding-top:8rem!important;
+          padding-bottom:8rem!important}
+        .lg\:pt-2{
+          padding-top:.5rem!important}
+        .lg\:shadow{
+          --tw-shadow:0 1px 3px 0 rgba(0,0,0,.1) , 0 1px 2px 0 rgba(0,0,0,.06)!important;
+          box-shadow:var(--tw-ring-offset-shadow,0 0 transparent) , var(--tw-ring-shadow,0 0 transparent) , var(--tw-shadow)!important}
+        .lg\:uppercase{
+          text-transform:uppercase!important}
+        .lg\:w-1\/2{
+          width:50%!important}
+        .lg\:w-2\/3{
+          width:66.666667%!important}
+        .lg\:w-1\/4{
+          width:25%!important}
+        .lg\:w-2\/4{
+          width:50%!important}
+        .lg\:w-5\/12{
+          width:41.666667%!important}
+        .lg\:w-6\/12{
+          width:50%!important}
+        .lg\:w-7\/12{
+          width:58.333333%!important}
+        .lg\:w-8\/12{
+          width:66.666667%!important}
+        .lg\:gap-6{
+          gap:1.5rem!important}
+        .lg\:grid-cols-3{
+          grid-template-columns:repeat(3,minmax(0,1fr))!important}
+        .lg\:grid-cols-5{
+          grid-template-columns:repeat(5,minmax(0,1fr))!important}
+        .lg\:rotate-0{
+          --tw-rotate:0deg!important}
+        .lg\:rotate-2{
+          --tw-rotate:2deg!important}
+        .lg\:-rotate-2{
+          --tw-rotate:-2deg!important}
+      }
+      @media (min-width:1280px){
+        .xl\:gap-8{
+          gap:2rem!important}
+      }
+    </style>
+    <style>::-webkit-scrollbar{
+      width:7px;
+      height:4px}
+      ::-webkit-scrollbar-track{
+        background-color:transparent}
+      ::-webkit-scrollbar-thumb{
+        background:#0d6efd;
+        border-radius:20px}
+      ::-webkit-scrollbar-thumb:hover{
+        background:#0a58ca}
+    </style>-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://parsinta.com/cloudme.fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-white text-gray-800 antialiased">
+    <div class="lg:min-h-screen bg-blue-100">
+      <div id="welcome-navigation">
+      </div>
+      <div class="bg-gradient-to-b from-gray-100 to-blue-100 lg:pt-2">
+        <div class="py-6 lg:py-24">
+          <div class="container">
+            <div class="flex justify-center">
+              <div class="max-w-3xl text-center">
+                <img src="/images/logo/mark.svg" class="shadow-xl w-24 h-24 inline mb-5 rounded-3xl bg-primary-500"/>
+                <h1 class="tracking-tight font-semibold text-2xl sm:text-3xl lg:text-5xl capitalize text-gray-1000">
+                  Awal yang sempurna  
+                </h1>
+                <h2 class="text-lg sm:text-2xl lg:text-3xl capitalize font-semibold text-gray-800 lg:mt-2 mb-3 lg:mb-6">untuk menumbuhkan keterampilan Anda
+                </h2>
+                <div class="leading-7 lg:leading-8 tet-sm lg:text-xl text-gray-600 lg:mb-0 mb-6">
+                  Tingkatkan kemampuan Anda dengan parsinta dengan mendorong 
+                  <br>  
+                  <span class="">keterampilan Anda ke tingkat berikutnya
+                  </span>, melalui seri-seri yang ada disini seperti 
+                  <a class="font-semibold text-primary-500" href="/skills/laravel">Laravel
+                  </a>, 
+                  <a class="font-semibold text-primary-500" href="/skills/vue">Vue
+                  </a>, 
+                  <a class="font-semibold text-primary-500" href="/skills/reactjs">React
+                  </a>, 
+                  <a class="font-semibold text-primary-500" href="/skills/tailwind-css">Tailwind CSS
+                  </a> dan 
+                  <a class="font-semibold text-primary-500" href="/series?curated">Banyak lagi
+                  </a>.
+                </div>
+                <div class="h-1 rounded-full bg-blue-500 w-56 my-10 lg:inline-block hidden">
+                </div>
+                <div class="lg:block hidden">
+                  <a class="inline-flex items-center justify-center focus:ring focus:ring-primary-200 shadow bg-primary-500 hover:bg-primary-600 text-white rounded-lg px-5 h-11 font-semibold uppercase text-xs tracking-wide transition duration-200" href="/register">
+                    Sign up for free
+                  </a>
+                  <a class="ml-2 inline-flex items-center justify-center bg-white shadow focus:ring focus:ring-gray-200 text-gray-900 rounded-lg px-5 h-11 font-semibold uppercase text-xs tracking-wide transition duration-200" href="/series?curated">
+                    Browse Courses
+                  </a>
+                </div>
+                <div class="relative lg:mb-0 lg:hidden block" id="search">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>    
+    </div>
+    <div class="my-8 lg:my-16 overflow-hidden">
+      <div class="container">
+        <div class="flex flex-col lg:flex-row items-center rounded-lg lg:rounded-none">
+          <div class="w-full lg:w-7/12 lg:-mr-6  transform lg:-rotate-2">
+            <a href="https://parsinta.com/series/mari-kita-bangun-screencast-8iy2gs">
+              <img src="https://parsinta.com/storage/images/series/mari-kita-bangun-screencast-8iy2gs.jpg" alt="Mari Kita Bangun Screencast" class="w-full rounded-lg lg:rounded-2xl"/>
+            </a>
+          </div>
+          <div class="border w-full bg-white lg:w-5/12 lg:h-495p transform lg:rounded-2xl p-4 lg:p-10 mt-4 rounded-lg lg:rounded-none flex flex-col justify-between">
+            <div>
+              <span class="text-xxs lg:text-xs capitalize lg:uppercase bg-clip-text text-transparent bg-gradient-to-br from-primary-500 to-cyan-500 font-semibold lg:mb-2">
+                Updated
+              </span>
+              <h1 class="text-sm sm:text-xl lg:text-3xl text-gray-800 sm:font-bold mb-2 lg:mb-4">
+                <a href="https://parsinta.com/series/mari-kita-bangun-screencast-8iy2gs">
+                  Mari Kita Bangun Screencast
+                </a>
+              </h1>
+              <div class="leading-relaxed lg:leading-8 lg:text-xl text-gray-600 mb-5 text-sm">
+                Jika Anda ingin mempelajari tentang bagaimana membangun screencast, mungkin ini cocok untuk Anda. Kita akan menggunakan [Laravel](https://laravel.com/?ref=parsinta.com) sebagai backendnya, dan [React](https://reactjs.org/?ref=parsinta.com) sebagai fr...
+              </div>
+            </div>
+            <div class="flex items-center font-medium text-gray-600 font-medium justify-between">
+              <div class="lg:text-base text-xs">
+                39 Episodes
+              </div>
+              <div>
+                <a href="/skills/laravel" class="text-xs font-medium lg:text-base bg-primary-500 text-white rounded-lg transition-background shadow-sm duration-300 font-medium px-2 py-1 lg:py-2 lg:px-5 lg:inline-block ml-2">
+                  Laravel
+                </a>
+                <a href="/skills/reactjs" class="text-xs font-medium lg:text-base bg-primary-500 text-white rounded-lg transition-background shadow-sm duration-300 font-medium px-2 py-1 lg:py-2 lg:px-5 lg:inline-block ml-2">
+                  React
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container mt-5 mb-10 lg:my-16">
+      <div class="flex items-center justify-center mb-5">
+        <div class="w-full lg:w-2/3 text-center">
+          <h1 class="text-gray-900 text-xl md:text-3xl mb-2">
+            Explore Parsinta
+          </h1>
+          <div class="md:text-lg text-gray-600">
+            Jika Anda sudah tahu apa yang Anda cari, Parsinta telah membagi menjadi berbagai topik mulai dari 
+            <span class="shadow-offset-blue text-primary-500 font-semibold">framework
+            </span> hingga 
+            <span class="shadow-offset-blue text-primary-500 font-semibold">bahasa
+            </span> yang bisa Anda pilih.
+          </div>
+          <div class="w-32 inline-block h-1 bg-gradient-to-br from-primary-500 to-teal-500 rounded-full my-4">
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/laravel">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/laravel.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              Laravel
+            </div>
+            <div class="text-xs text-gray-600">
+              28 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/css">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/css.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              CSS
+            </div>
+            <div class="text-xs text-gray-600">
+              12 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/tailwind-css">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/tailwind-css.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              Tailwind CSS
+            </div>
+            <div class="text-xs text-gray-600">
+              6 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/vue">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/vue.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              Vue
+            </div>
+            <div class="text-xs text-gray-600">
+              6 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/reactjs">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/reactjs.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              React
+            </div>
+            <div class="text-xs text-gray-600">
+              6 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/js">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/js.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              Javascript
+            </div>
+            <div class="text-xs text-gray-600">
+              6 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/html">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/html.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              HTML
+            </div>
+            <div class="text-xs text-gray-600">
+              4 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/sass">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/sass.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              SASS
+            </div>
+            <div class="text-xs text-gray-600">
+              3 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/database">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/database.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              Database
+            </div>
+            <div class="text-xs text-gray-600">
+              3 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/tool">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/tool.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              Tool
+            </div>
+            <div class="text-xs text-gray-600">
+              3 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/php">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/php.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              PHP
+            </div>
+            <div class="text-xs text-gray-600">
+              2 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/code-editor">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/code-editor.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              Code Editor
+            </div>
+            <div class="text-xs text-gray-600">
+              2 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/bootstrap">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/bootstrap.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              Bootstrap
+            </div>
+            <div class="text-xs text-gray-600">
+              2 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/algolia">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/algolia.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              Algolia
+            </div>
+            <div class="text-xs text-gray-600">
+              2 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/livewire">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/livewire.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              Livewire
+            </div>
+            <div class="text-xs text-gray-600">
+              2 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/nextjs">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/nextjs.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              Next.js
+            </div>
+            <div class="text-xs text-gray-600">
+              1 series
+            </div>
+          </div>
+        </a>
+        <a class="bg-white hover:bg-gray-100 transition-colors duration-200 rounded h-16 flex items-center rounded-lg border focus:ring focus:ring-primary-100 focus:border-primary-500 p-4" href="/skills/fortify">
+          <div class="flex-shrink-0 mr-3">
+            <img src="/images/subject/fortify.svg" class="w-10 h-10"/>
+          </div>
+          <div>
+            <div class="text-sm font-medium">
+              Fortify
+            </div>
+            <div class="text-xs text-gray-600">
+              1 series
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="bg-gray-100 py-10">
+      <div class="container">
+        <div class="shadow bg-white text-gray-800 rounded-lg px-3 py-2 uppercase font-semibold inline-block mb-4 lg:mb-5">
+          Latest
+        </div>
+        <div class="grid lg:grid-cols-3 gap-4 lg:gap-6">
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img class="w-full" src="https://parsinta.com/storage/images/series/mari-kita-bangun-screencast-8iy2gs.jpg" alt="Mari Kita Bangun Screencast"/>
+            <div class="truncate p-5">
+              <a class="text-gray-900" href="https://parsinta.com/series/mari-kita-bangun-screencast-8iy2gs">
+                Mari Kita Bangun Screencast
+              </a>
+              <div>
+                <a href="/skills/laravel" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/laravel">
+                  Laravel
+                </a>
+                <a href="/skills/reactjs" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/reactjs">
+                  React
+                </a>
+                <a href="/skills/laravel-8" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/laravel-8">
+                  Laravel 8
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img class="w-full" src="https://parsinta.com/storage/images/series/belajar-nextjs-dari-awal-ld5hdz.jpg" alt="Belajar Next.js Dari Awal"/>
+            <div class="truncate p-5">
+              <a class="text-gray-900" href="https://parsinta.com/series/belajar-nextjs-dari-awal-ld5hdz">
+                Belajar Next.js Dari Awal
+              </a>
+              <div>
+                <a href="/skills/reactjs" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/reactjs">
+                  React
+                </a>
+                <a href="/skills/nextjs" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/nextjs">
+                  Next.js
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img class="w-full" src="https://parsinta.com/storage/images/series/cash-in-out-dengan-laravel-8-dan-vue-3-ykwnl3.jpeg" alt="Cash In Out dengan Laravel Api dan Vue 3"/>
+            <div class="truncate p-5">
+              <a class="text-gray-900" href="https://parsinta.com/series/cash-in-out-dengan-laravel-8-dan-vue-3-ykwnl3">
+                Cash In Out dengan Laravel Api dan Vue 3
+              </a>
+              <div>
+                <a href="/skills/laravel" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/laravel">
+                  Laravel
+                </a>
+                <a href="/skills/vue" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/vue">
+                  Vue
+                </a>
+                <a href="/skills/laravel-8" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/laravel-8">
+                  Laravel 8
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img class="w-full" src="https://parsinta.com/storage/images/series/belajar-tailwind-css-2-jyijbo.jpeg" alt="Belajar Tailwind CSS 2"/>
+            <div class="truncate p-5">
+              <a class="text-gray-900" href="https://parsinta.com/series/belajar-tailwind-css-2-jyijbo">
+                Belajar Tailwind CSS 2
+              </a>
+              <div>
+                <a href="/skills/css" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/css">
+                  CSS
+                </a>
+                <a href="/skills/tailwind-css" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/tailwind-css">
+                  Tailwind CSS
+                </a>
+                <a href="/skills/reactjs" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/reactjs">
+                  React
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img class="w-full" src="https://parsinta.com/storage/images/series/mari-kita-gunakan-laravel-breeze-0MLVWW.jpeg" alt="Mari Kita Gunakan Laravel Breeze"/>
+            <div class="truncate p-5">
+              <a class="text-gray-900" href="https://parsinta.com/series/mari-kita-gunakan-laravel-breeze-0MLVWW">
+                Mari Kita Gunakan Laravel Breeze
+              </a>
+              <div>
+                <a href="/skills/laravel" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/laravel">
+                  Laravel
+                </a>
+                <a href="/skills/laravel-8" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/laravel-8">
+                  Laravel 8
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img class="w-full" src="https://parsinta.com/storage/images/series/komposisi-api-dalam-vue-3-Extwfs.jpeg" alt="Komposisi API Dalam Vue 3"/>
+            <div class="truncate p-5">
+              <a class="text-gray-900" href="https://parsinta.com/series/komposisi-api-dalam-vue-3-Extwfs">
+                Komposisi API Dalam Vue 3
+              </a>
+              <div>
+                <a href="/skills/vue" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/vue">
+                  Vue
+                </a>
+                <a href="/skills/js" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/js">
+                  Javascript
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img class="w-full" src="https://parsinta.com/storage/images/series/apa-yang-baru-di-vue-3-BvEHCQ.jpeg" alt="Apa Yang Baru Di Vue 3"/>
+            <div class="truncate p-5">
+              <a class="text-gray-900" href="https://parsinta.com/series/apa-yang-baru-di-vue-3-BvEHCQ">
+                Apa Yang Baru Di Vue 3
+              </a>
+              <div>
+                <a href="/skills/vue" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/vue">
+                  Vue
+                </a>
+                <a href="/skills/js" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/js">
+                  Javascript
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img class="w-full" src="https://parsinta.com/storage/images/series/siapkan-mac-anda-untuk-dev-b2W1qj.jpeg" alt="Siapkan Mac Anda Untuk Dev"/>
+            <div class="truncate p-5">
+              <a class="text-gray-900" href="https://parsinta.com/series/siapkan-mac-anda-untuk-dev-b2W1qj">
+                Siapkan Mac Anda Untuk Dev
+              </a>
+              <div>
+                <a href="/skills/tool" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/tool">
+                  Tool
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white shadow rounded-lg overflow-hidden">
+            <img class="w-full" src="https://parsinta.com/storage/images/series/membangun-web-profil-band-dan-lirik-dengan-laravel-8-1601433541.jpeg" alt="Membangun Web Profil Band dan Lirik dengan Laravel 8"/>
+            <div class="truncate p-5">
+              <a class="text-gray-900" href="https://parsinta.com/series/membangun-web-profil-band-dan-lirik-dengan-laravel-8-1601433541">
+                Membangun Web Profil Band dan Lirik dengan Laravel 8
+              </a>
+              <div>
+                <a href="/skills/laravel" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/laravel">
+                  Laravel
+                </a>
+                <a href="/skills/reactjs" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/reactjs">
+                  React
+                </a>
+                <a href="/skills/laravel-8" class="shadow-offset-blue text-black font-medium text-xxs uppercase mr-2" href="/skills/laravel-8">
+                  Laravel 8
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-center mt-4 lg:mt-5">
+          <div class="w-full lg:w-1/2">
+            <div class="text-center">
+              Ingin lebih banyak ? 
+              <a href="/series" class="hover:text-primary-500 text-primary-600 font-semibold">Lihat disini
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="updated" class="crease-series" second-class="from-pink-400 to-rose-500" title="Baru Saja Diperbarui" slides-perpage="1" subtitle="Penasaran apa saja yang baru di Parsinta? Seri berikut ini baru saja diperbarui." url="/api/series/filter?updated">
+    </section>
+    <section id="popular" class="crease-series" second-class="from-yellow-400 to-orange-500" title="Seri Terpopuler" slides-perpage="1" subtitle="Berikut ini adalah beberapa seri yang paling diminati sepanjang waktu" url="/api/series/filter?popular">
+    </section>
+    <section id="testimonial" class="testimonial" title="Apa yang mereka bilang ?" slides-perpage="1" subtitle="Parsinta sudah direkomendasikan oleh Developer, Guru, Dosen dan banyak lagi" url="/api/testimonial">
+    </section>
+    <section class="container">
+      <div class="flex justify-center mb-10">
+        <div class="text-center w-full lg:w-6/12">
+          <h2 class="font-semibold capitalize text-gray-800 mb-2 text-xl">
+            Pilih paket sesuai dengan kebutuhan Anda
+          </h2>
+          <div class="text-gray-600 text-sm">
+            Jika Anda menikmati Parsinta, Anda akan menghemat banyak uang dengan memilih paket 
+            <span className="font-semibold">Conqueror
+            </span>, karena Anda akan mendapatkan diskon sebesar Rp 
+            <span className="font-semibold">396.000
+            </span> dari pada bayar perbulan.
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="pricing">
+    </div>
+    <section class="container">
+      <h2 class="text-3xl tracking-tight font-extrabold text-gray-900 mt-5 lg:mt-16 mb-8">Gabung Dengan
+        Parsinta
+      </h2>
+      <ul class="grid sm:grid-cols-2 gap-6 xl:gap-8">
+        <li>
+          <a href="https://parsinta.com/s/facebook" class="flex items-start space-x-4">
+            <svg fill="currentColor" class="flex-none text-facebook w-12 h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"/>
+            </svg>
+            <div class="flex-auto">
+              <h3 class="font-bold text-gray-900">Facebook
+              </h3>
+              <p>Sukai facebook Parsinta untuk mendapatkan update terbaru
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://parsinta.com/s/discord" class="flex items-start space-x-4">
+            <svg fill="currentColor" class="flex-none text-indigo-400 w-12 h-12">
+              <rect width="48" height="48" rx="12">
+              </rect>
+              <path d="M21.637 23.57c-.745 0-1.332.653-1.332 1.45 0 .797.6 1.45 1.332 1.45.744 0 1.332-.653 1.332-1.45.013-.797-.588-1.45-1.332-1.45zm4.767 0c-.744 0-1.332.653-1.332 1.45 0 .797.6 1.45 1.332 1.45.745 0 1.332-.653 1.332-1.45 0-.797-.587-1.45-1.332-1.45z" fill="currentColor" class="text-indigo-50">
+              </path>
+              <path d="M32.75 12.613H15.248a2.684 2.684 0 00-2.678 2.69v17.66a2.684 2.684 0 002.678 2.69h14.811l-.692-2.416 1.672 1.554 1.58 1.463 2.809 2.482V15.304a2.684 2.684 0 00-2.678-2.69zm-5.042 17.058s-.47-.561-.862-1.058c1.711-.483 2.364-1.554 2.364-1.554-.535.353-1.045.6-1.502.77a8.591 8.591 0 01-1.894.562 9.151 9.151 0 01-3.383-.013 10.964 10.964 0 01-1.92-.561 7.652 7.652 0 01-.953-.445c-.04-.026-.078-.039-.117-.065-.027-.013-.04-.026-.053-.039-.235-.13-.365-.222-.365-.222s.627 1.045 2.285 1.541c-.392.497-.875 1.084-.875 1.084-2.886-.091-3.983-1.985-3.983-1.985 0-4.206 1.88-7.615 1.88-7.615C20.211 18.661 22 18.7 22 18.7l.131.157c-2.35.679-3.435 1.71-3.435 1.71s.287-.156.77-.378c1.398-.614 2.508-.784 2.965-.823.079-.013.144-.026.223-.026a10.647 10.647 0 016.57 1.228s-1.033-.98-3.253-1.66l.183-.208s1.79-.04 3.67 1.371c0 0 1.881 3.41 1.881 7.615 0 0-1.11 1.894-3.997 1.985z" fill="currentColor" class="text-indigo-50">
+              </path>
+            </svg>
+            <div class="flex-auto">
+              <h3 class="font-bold text-gray-900">Discord
+              </h3>
+              <p>Ingin diskusi, silahkan gabung ke discord parsinta.
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://parsinta.com/s/twitter" class="flex items-start space-x-4">
+            <svg fill="currentColor" class="flex-none text-light-blue-400 w-12 h-12">
+              <rect width="48" height="48" rx="12">
+              </rect>
+              <path d="M37.127 15.989h-.001a11.04 11.04 0 01-3.093.836 5.336 5.336 0 002.37-2.932 10.815 10.815 0 01-3.421 1.284 5.42 5.42 0 00-3.933-1.679c-2.976 0-5.385 2.373-5.385 5.3-.003.406.044.812.138 1.207a15.351 15.351 0 01-11.102-5.54 5.235 5.235 0 00-.733 2.663c0 1.837.959 3.461 2.406 4.413a5.338 5.338 0 01-2.449-.662v.066c0 2.57 1.86 4.708 4.32 5.195a5.55 5.55 0 01-1.418.186c-.34 0-.68-.033-1.013-.099.684 2.106 2.676 3.637 5.034 3.68a10.918 10.918 0 01-6.69 2.269 11.21 11.21 0 01-1.285-.077 15.237 15.237 0 008.242 2.394c9.918 0 15.337-8.077 15.337-15.083 0-.23-.006-.459-.017-.683a10.864 10.864 0 002.686-2.746l.007.008z" fill="currentColor" class="text-light-blue-50">
+              </path>
+            </svg>
+            <div class="flex-auto">
+              <h3 class="font-bold text-gray-900">Twitter
+              </h3>
+              <p>Ikuti twitter Parsinta untuk mendapatkan update terbaru
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://parsinta.com/s/youtube" class="flex items-start space-x-4">
+            <svg fill="currentColor" class="flex-none text-red-500 w-12 h-12">
+              <rect width="48" height="48" rx="12">
+              </rect>
+              <path d="M36.83 18.556c0-2.285-1.681-4.124-3.758-4.124a184.713 184.713 0 00-8.615-.182h-.914c-2.925 0-5.799.05-8.612.183-2.072 0-3.753 1.848-3.753 4.133A75.6 75.6 0 0011 23.99a78.487 78.487 0 00.173 5.429c0 2.285 1.68 4.139 3.753 4.139 2.955.137 5.987.198 9.07.192 3.087.01 6.11-.054 9.069-.193 2.077 0 3.758-1.853 3.758-4.138.121-1.813.177-3.62.172-5.434a73.982 73.982 0 00-.165-5.428zM21.512 28.97v-9.979l7.363 4.987-7.363 4.992z" fill="currentColor" class="text-red-50">
+              </path>
+            </svg>
+            <div class="flex-auto">
+              <h3 class="font-bold text-gray-900">YouTube
+              </h3>
+              <p>Subscribe dan nikmati semua pelajaran setiap hari di youtube.
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://parsinta.com/s/instagram" class="flex items-start space-x-4">
+            <svg class="flex-none w-12 h-12" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 16 16" xml:space="preserve">
+              <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1.4645" y1="14.5355" x2="14.5355" y2="1.4645">
+                <stop offset="0" stop-color="#FFC107"/>
+                <stop offset="0.5074" stop-color="#F44336"/>
+                <stop offset="0.9901" stop-color="#9C27B0"/>
+              </linearGradient>
+              <path d="M11 0H5a5 5 0 0 0-5 5v6a5 5 0 0 0 5 5h6a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zm3.5 11c0 1.93-1.57 3.5-3.5 3.5H5c-1.93 0-3.5-1.57-3.5-3.5V5c0-1.93 1.57-3.5 3.5-3.5h6c1.93 0 3.5 1.57 3.5 3.5v6z" fill="url(#SVGID_1_)"/>
+              <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="5.1716" y1="10.8284" x2="10.8284" y2="5.1716">
+                <stop offset="0" stop-color="#FFC107"/>
+                <stop offset="0.5074" stop-color="#F44336"/>
+                <stop offset="0.9901" stop-color="#9C27B0"/>
+              </linearGradient>
+              <path d="M8 4a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm0 6.5A2.503 2.503 0 0 1 5.5 8c0-1.379 1.122-2.5 2.5-2.5s2.5 1.121 2.5 2.5c0 1.378-1.122 2.5-2.5 2.5z" fill="url(#SVGID_2_)"/>
+              <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="11.9229" y1="4.0771" x2="12.6771" y2="3.3229">
+                <stop offset="0" stop-color="#FFC107"/>
+                <stop offset="0.5074" stop-color="#F44336"/>
+                <stop offset="0.9901" stop-color="#9C27B0"/>
+              </linearGradient>
+              <circle cx="12.3" cy="3.7" r="0.533" fill="url(#SVGID_3_)"/>
+            </svg>
+            <div class="flex-auto">
+              <h3 class="font-bold text-gray-900">Instagram
+              </h3>
+              <p>Ikuti instagram Parsinta untuk mendapatkan update pada setiap seri terbaru
+              </p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="https://parsinta.com/s/telegram" class="flex items-start space-x-4">
+            <svg class="flex-none w-12 h-12 rounded-xl" xmlns="http://www.w3.org/2000/svg" aria-label="Telegram" viewBox="0 0 512 512">
+              <rect width="512" height="512" fill="#37aee2" rx="15%"/>
+              <path fill="#c8daea" d="M199 404c-11 0-10-4-13-14l-32-105 245-144"/>
+              <path fill="#a9c9dd" d="M199 404c7 0 11-4 16-8l45-43-56-34"/>
+              <path fill="#f6fbfe" d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"/>
+            </svg>
+            <div class="flex-auto">
+              <h3 class="font-bold text-gray-900">Telegram Update
+              </h3>
+              <p>Gabung telegram Parsinta untuk mendapatkan update pada setiap seri terbaru
+              </p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <div class="bg-gray-50 dark:bg-gray-1000 py-10 lg:py-32 mt-10">
+      <div class="container">
+        <div class="flex flex-col lg:flex-row flex-wrap">
+          <div class="w-full lg:w-1/4 mb-8 lg:mb-0">
+            <h4 class="text-gray-900 dark:text-white font-semibold text-sm uppercase">Start Learning
+            </h4>
+            <ul>
+              <li>
+                <a title="Series" href="/series" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Series
+                </a>
+              </li>
+              <li>
+                <a title="Journey" href="/skills/laravel" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Journey
+                </a>
+              </li>
+              <li>
+                <a title="Pro Series" href="/series?premiun" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Pro Series
+                </a>
+              </li>
+              <li>
+                <a title="Curated Series" href="/series?curated" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Curated Series
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-1/4 mb-8 lg:mb-0">
+            <h4 class="text-gray-900 dark:text-white font-semibold text-sm uppercase">Ready to binge
+            </h4>
+            <ul>
+              <li>
+                <a title="" href="/premium" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Go Premium
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-1/4 mb-8 lg:mb-0">
+            <h4 class="text-gray-900 dark:text-white font-semibold text-sm uppercase">Extra
+            </h4>
+            <ul>
+              <li>
+                <a title="" href="/faq" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  FAQ
+                </a>
+              </li>
+              <li>
+                <a title="" href="http://blog.parsinta.com" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a title="" href="http://assets.parsinta.com" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Assets
+                </a>
+              </li>
+              <li>
+                <a title="" href="/testimonials" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Testimonials
+                </a>
+              </li>
+              <li>
+                <a title="" href="/privacy" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a title="" href="/terms" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Terms & Condition
+                </a>
+              </li>
+              <li>
+                <a title="" href="https://api.whatsapp.com/send?phone=+6285156681721&amp;text=Saya%20ingin%20membuat%20iklan%20di%20*Parsinta*." class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Advertisement
+                </a>
+              </li>
+              <li>
+                <a title="" href="/login" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Login
+                </a>
+              </li>
+              <li>
+                <a title="" href="/register" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  Register
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="w-full lg:w-1/4 mb-8 lg:mb-0">
+            <h4 class="text-gray-900 dark:text-white font-semibold text-sm uppercase">COMMUNITY
+            </h4>
+            <ul>
+              <li>
+                <a title="Parsinta&#039;s twitter" href="http://parsinta.com/s/twitter" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  twitter
+                </a>
+              </li>
+              <li>
+                <a title="Parsinta&#039;s discord" href="http://parsinta.com/s/discord" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  discord
+                </a>
+              </li>
+              <li>
+                <a title="Parsinta&#039;s youtube" href="http://parsinta.com/s/youtube" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  youtube
+                </a>
+              </li>
+              <li>
+                <a title="Parsinta&#039;s facebook" href="http://parsinta.com/s/facebook" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  facebook
+                </a>
+              </li>
+              <li>
+                <a title="Parsinta&#039;s telegram" href="http://parsinta.com/s/telegram" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  telegram
+                </a>
+              </li>
+              <li>
+                <a title="Parsinta&#039;s instagram" href="http://parsinta.com/s/instagram" class="block capitalize text-sm text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition duration-200 focus:text-gray-900 font-medium my-4">
+                  instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="w-full h-px bg-gray-200 dark:bg-gray-700 mb-10 lg:my-16">
+        </div>
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <img src="/images/logo/mark.svg" class="w-8 h-8 inline mr-2 bg-gradient-to-br from-primary-500 to-teal-500 rounded-lg"/>
+            <img src="/images/logo/type.svg" class="w-32"/>
+          </div>
+          <div class="lg:hidden block font-semibold text-sm text-gray-500">2021 &trade;
+          </div>
+          <div class="lg:block hidden uppercase font-semibold text-sm text-gray-600 dark:text-gray-400">
+            parsinta &trade; 2015 - 2021
+          </div>
+        </div>
+      </div>
+    </div>    
+    <script src="https://parsinta.com/js/loader.min.js">
+    </script>
+    <script src="https://parsinta.com/js/manifest.js?id=25910ca6dde157aaa027">
+    </script>
+    <script src="https://parsinta.com/js/min.js?id=6e0879c0ff59987ad318">
+    </script>
+    <script src="https://parsinta.com/js/vendor.js?id=771ee33e3cb7d7bae070">
+    </script>
+  </body>
+</html>
